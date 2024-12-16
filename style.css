@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
+}
+body{   
+    background-color: rgb(99, 7, 157);
+}
+.navbar{
+    height: 50px;
+    margin: 20px 30px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlink{
+    color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: rgb(99, 7, 157);
+    
+    text-align: center;
+    line-height: 40px;
+    transition: all  .4s linear  ;
+    margin: 0 4px;
+    font-size: large;
+}
+.navlink:hover{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    
+}
+.navlink_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 100px;
+}
+
+
+
+
+.Quote{
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    
+    text-decoration: none;
+    display:  flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(250, 154, 9);
+    transition: all  .1s linear  ;
+}
+
+.Quote:hover{
+    font-size: 1.2em;
+    box-shadow: 2px 2px 2px rgb(250, 154, 9);
+    transform: scale(1.1);
+}
+
+.home_el{
+    color:white;
+    font-weight: 600;
+    font-size: 1.4em;
+    text-decoration: none;
+    width: 150px;
+    
+}
+.Digian{
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    font-size: 1.3em;
+    transition: all .2s linear;
+
+}
+.Digian:hover{
+    transform: scale(1.4);
+}
+.herosection1{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    
+    animation: con1 1.2s linear 1;
+    /* animation-timeline: view();
+    animation-range: 0% cover 50%; */
+}
+.hero_img{
+    height: 86%;
+    width: 40%;
+    
+    background-image: url('Content/slider-img.png');
+    background-size: contain;
+    background-repeat: round;
+    align-self: self-end;
+}
+@keyframes con1 {
+    from{
+        
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to{ opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.hero_sec2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+.hero_each{
+    padding-bottom: 25px;
+}
+.heading-hero{
+    font-size: 45px;
+}
+.contact_bt{
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    
+    color: white;
+    text-decoration: none;
+    background-color: rgba(17, 16, 16, 0.4);
+    border-radius: 5px;
+    line-height: 40px;
+    transition: all .1s linear;
+}
+
+.contact_bt:hover{
+    font-size: 1.2em;
+    box-shadow: 2px 2px 2px rgb(7, 10, 23);
+    transform: scale(1.1);
+}
+

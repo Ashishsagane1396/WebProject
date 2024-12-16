@@ -1,0 +1,117 @@
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+}
+.heading{
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    animation: Animate 2s linear 1;
+    animation-timeline: view();
+    animation-range: 0% cover 50%;
+}
+
+/* @keyframes Animate {
+    from{
+        
+        opacity: 0.3;
+        transform: translateX(-150px);
+    }
+    to{ opacity: 1;
+        transform: translateX(0px);
+    }
+} */
+
+.paging{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.box{
+    height: 20em;
+    width: 16em;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid rgb(181, 175, 175);
+    border-radius: 8px;
+    transition: all .3s linear;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.box:hover{
+    box-shadow: 4px 4px 4px grey;
+    transform: scale(1.1);
+
+}
+
+.box_img{
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: 36px 0px;
+    
+}
+
+.box1{
+    background-image: url('Content/s1.png');
+}
+.box2{
+    background-image: url('Content/s2.png');
+}
+.box3{
+    background-image: url('Content/s3.png');
+}
+.box4{
+    background-image: url('Content/s4.png');
+}
+
+.boxtitle{
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.boxDetails{
+    margin-bottom: 20px;
+}
+.boxReadmore{
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.boxReadmore:hover{
+    color: rgb(233, 157, 16);
+    font-size: large;
+}
+
+.viewMore{
+    height: 35px;
+    width: 172px;
+    border: .5px solid black;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(108, 28, 184);
+    text-align: center;
+    text-decoration: none;
+    line-height: 33px;
+    font-size: 1.1em;
+    transition: all .1s linear;
+}
+
+.viewMore:hover{
+    font-size: 1.2em;
+    box-shadow: 3px 3px 3px grey;
+    
+    transform: scale(1.1);
+}
